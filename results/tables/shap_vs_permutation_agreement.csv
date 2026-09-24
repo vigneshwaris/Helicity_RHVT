@@ -1,0 +1,4 @@
+target,spearman_shap_vs_perm,top3_overlap,top3_shap,top3_perm
+Vorticity,0.9510489510489512,3,"['Reynolds Number', 'Swirl Number', 'Mach Number']","['Reynolds Number', 'Swirl Number', 'Mach Number']"
+Helicity,0.965034965034965,3,"['Swirl Number', 'Reynolds Number', 'Mach Number']","['Swirl Number', 'Reynolds Number', 'Mach Number']"
+Q-Criterion,0.8461538461538463,3,"['Reynolds Number', 'Swirl Number', 'Mach Number']","['Reynolds Number', 'Swirl Number', 'Mach Number']"

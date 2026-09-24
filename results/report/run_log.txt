@@ -1,0 +1,42 @@
+[18:13:08  +    60s] 💾 stage 'audit' saved to Drive cache
+[18:13:40  +    92s] 💾 stage 'split' saved to Drive cache
+[18:13:46  +    98s] CV  Vorticity    Linear Ridge       done in   0.1s
+[18:13:48  +   100s] CV  Vorticity    Quadratic Ridge    done in   1.6s
+[18:14:02  +   114s] CV  Vorticity    Random Forest      done in  14.4s
+[18:14:07  +   119s] CV  Vorticity    Gradient Boosting  done in   4.9s
+[18:14:13  +   125s] CV  Vorticity    MLP                done in   5.5s
+[18:14:13  +   125s] CV  Helicity     Linear Ridge       done in   0.1s
+[18:14:13  +   125s] CV  Helicity     Quadratic Ridge    done in   0.2s
+[18:14:27  +   140s] CV  Helicity     Random Forest      done in  14.6s
+[18:14:33  +   145s] CV  Helicity     Gradient Boosting  done in   5.1s
+[18:14:37  +   149s] CV  Helicity     MLP                done in   4.3s
+[18:14:37  +   149s] CV  Q-Criterion  Linear Ridge       done in   0.1s
+[18:14:38  +   150s] CV  Q-Criterion  Quadratic Ridge    done in   1.1s
+[18:14:53  +   166s] CV  Q-Criterion  Random Forest      done in  15.3s
+[18:14:57  +   169s] CV  Q-Criterion  Gradient Boosting  done in   3.8s
+[18:15:04  +   176s] CV  Q-Criterion  MLP                done in   6.6s
+[18:15:05  +   177s] 💾 stage 'cv' saved to Drive cache
+[18:15:50  +   222s] 💾 stage 'final' saved to Drive cache
+[18:16:02  +   234s] 💾 stage 'conformal' saved to Drive cache
+[18:16:15  +   247s] 💾 stage 'shap' saved to Drive cache
+[18:16:35  +   267s] 💾 stage 'perm' saved to Drive cache
+[18:16:45  +   278s] derivative fidelity Vorticity: 0.3s
+[18:16:46  +   278s] derivative fidelity Helicity: 0.2s
+[18:16:46  +   278s] derivative fidelity Q-Criterion: 0.2s
+[18:16:49  +   281s] 💾 stage 'deriv' saved to Drive cache
+[18:17:23  +   315s] 💾 stage 'mach' saved to Drive cache
+[18:17:30  +   322s] Ablation keeps 3 inputs: ['Reynolds Number', 'Swirl Number', 'Mach Number']
+[18:17:32  +   324s] 💾 stage 'ablation' saved to Drive cache
+[18:17:42  +   334s] Swirl threshold 1.137: train 1053 · cal 348 · in-range test 345 · extrapolation rows 754
+[18:17:54  +   346s] 💾 stage 'extrap' saved to Drive cache
+[18:18:06  +   359s] poly-vs-tree Vorticity    Quadratic Ridge      0.0s
+[18:18:12  +   364s] poly-vs-tree Vorticity    Random Forest        5.5s
+[18:18:13  +   365s] poly-vs-tree Vorticity    Gradient Boosting    1.3s
+[18:18:13  +   365s] poly-vs-tree Helicity     Quadratic Ridge      0.0s
+[18:18:19  +   371s] poly-vs-tree Helicity     Random Forest        6.0s
+[18:18:21  +   373s] poly-vs-tree Helicity     Gradient Boosting    1.5s
+[18:18:21  +   373s] poly-vs-tree Q-Criterion  Quadratic Ridge      0.0s
+[18:18:26  +   378s] poly-vs-tree Q-Criterion  Random Forest        5.5s
+[18:18:28  +   380s] poly-vs-tree Q-Criterion  Gradient Boosting    1.3s
+[18:18:28  +   380s] 💾 stage 'polytree' saved to Drive cache
+[18:19:05  +   418s] 💾 stage 'report' saved to Drive cache

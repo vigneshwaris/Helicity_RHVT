@@ -1,0 +1,71 @@
+{
+  "generated": "2026-09-18 18:19:05.907269",
+  "dataset_sha256": "c5b8a4bf16b51c891d0e233fc2f55dd1d5bd4adb72333f7f1e9b1c680e2f7ab0",
+  "seed": 42,
+  "n_rows": 2500,
+  "split": [
+    1500,
+    500,
+    500
+  ],
+  "selected_model": "Quadratic Ridge",
+  "cv_winner": "Quadratic Ridge",
+  "test_metrics": {
+    "Vorticity": {
+      "R2": 0.98976,
+      "RMSE": 20.31832,
+      "MAE": 16.21964
+    },
+    "Helicity": {
+      "R2": 0.98324,
+      "RMSE": 26.52911,
+      "MAE": 21.63046
+    },
+    "Q-Criterion": {
+      "R2": 0.90498,
+      "RMSE": 1310.40485,
+      "MAE": 1030.19302
+    }
+  },
+  "conformal_coverage": {
+    "Vorticity": 0.91,
+    "Helicity": 0.926,
+    "Q-Criterion": 0.9
+  },
+  "fidelity_score": {
+    "Vorticity": 0.9763,
+    "Helicity": 0.88,
+    "Q-Criterion": 0.9207
+  },
+  "shap_mass_on_unresolved_or_poor_pct": {
+    "Vorticity": 9.7,
+    "Helicity": 11.4,
+    "Q-Criterion": 19.7
+  },
+  "ablation": {
+    "kept": [
+      "Reynolds Number",
+      "Swirl Number",
+      "Mach Number"
+    ],
+    "mean_nMAE_full": 0.3394,
+    "mean_nMAE_ablated": 0.1528,
+    "mean_dR2": 0.00279
+  },
+  "extrapolation_threshold_swirl": 1.137,
+  "library_versions": {
+    "python": "3.13.15",
+    "sklearn": "1.6.1",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3"
+  },
+  "config": {
+    "FD_STEP": 0.25,
+    "KNN_K": 300,
+    "FID_SNR_MIN": 2.0,
+    "ALPHA_CONF": 0.1,
+    "PERM_REPEATS": 20,
+    "N_BOOT": 40,
+    "SWIRL_Q": 0.7
+  }
+}

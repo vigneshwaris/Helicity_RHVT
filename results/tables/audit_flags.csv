@@ -1,0 +1,19 @@
+severity,area,finding
+OK,shape,2500 rows × 35 columns as expected (12 inputs + 23 outputs).
+OK,integrity,0 missing/non-numeric cells.
+OK,integrity,0 duplicated rows.
+OK,integrity,Constant columns: none.
+INFO,redundancy,L/D Ratio ≈ Tube Length / Tube Diameter (max rel. error 0.01%) → the 3 columns are NOT independent inputs.
+INFO,redundancy,Pressure Ratio ≈ Inlet / Outlet pressure (max rel. error 0.08%) → redundant with two other inputs.
+WARN,collinearity,"corr(Mach Number, Pressure Ratio) = 0.983 → Mach is almost a function of pressure ratio; its separate effect is barely identifiable."
+WARN,definition,'Pressure Drop' differs from Inlet−Outlet pressure by 0.288 bar on average (max 0.71) → definition of this column is undocumented.
+OK,physics,Hot-exit T > Cold-exit T in 100.0% of rows.
+WARN,physics,'Maximum Temperature' ≥ Hot-exit T in only 1.2% of rows → 'Maximum Temperature' is not a field maximum; clarify its definition.
+WARN,physics,'Maximum Mach' ≥ 'Mach Number' in 77.0% of rows → in 23% of rows the 'maximum' is below the reported Mach number; the two columns use different (undocumented) definitions.
+INFO,regime,35.5% of rows have Maximum Mach > 1 (supersonic pockets / shocks).
+INFO,targets,"corr(Q-criterion, vorticity²) = 0.926; corr(Vorticity, Helicity) = 0.678 → the three 'primary' outputs are strongly related."
+INFO,provenance,"89% of the base inputs are statistically uniform (KS p>0.05) and mutually uncorrelated (max |r|=0.20) → looks like a space-filling / random design-of-experiments, NOT measured operating points."
+WARN,provenance,"No case ID, solver, mesh, run-time or uncertainty columns → provenance of Vorticity / Helicity / Q cannot be verified from the file alone. Your instruments (K-type TC, pressure transducer, flow controller) do not measure these quantities → treat them as simulation / proxy outputs."
+WARN,rig-vs-data,"Only 2 rows (0.1%) resemble your physical rig geometry (tube Ø19, L380, 6×2 nozzle). The dataset is a broad parametric envelope → conclusions are about the dataset, not directly about the rig."
+INFO,rig-vs-data,"Rig thermocouples sit at the outlet plane: cold end on the axis, hot end at the periphery → 'exit temperature' columns are location-dependent point values, not mixed-mean values."
+WARN,collinearity,"Highest-VIF inputs: Pressure Ratio (40), Mach Number (35), Inlet Pressure (29), L/D Ratio (16) → attributions/derivatives for these are ambiguous."

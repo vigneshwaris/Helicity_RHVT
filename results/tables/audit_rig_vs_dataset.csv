@@ -1,0 +1,8 @@
+Quantity,Rig value,Dataset range,Overlap
+Tube diameter (mm),19.0,8.0 – 20.0,31.9% within ±15 %
+Tube length (mm),380.0,100 – 800,15.9% within ±15 %
+L/D,20.0,5.2 – 95.7,11.5% within ±15 %
+Nozzle: 6×2 mm rectangle → equivalent circular Ø (mm),3.91,0.80 – 3.00,rig value lies OUTSIDE the dataset range
+Nozzle: hydraulic Ø (mm),3.0,0.80 – 3.00,at the upper edge
+Nozzle / tube area ratio (shape-independent),0.0423,0.0017 – 0.1339,18.7% within ±30 %
+Rows close to the rig on all 3 geometry criteria,—,—,2 of 2500
